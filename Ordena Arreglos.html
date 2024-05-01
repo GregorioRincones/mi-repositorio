@@ -1,0 +1,48 @@
+<script>
+                            
+                  /* XX Ordena Arreglos  Ascendente XX   */ 
+
+                  var arreglo = [];
+                  var temporal = 0; 
+                  var iteracion = 0;
+
+                  function OrdenaArreglos(arreglo) {
+                        
+                        longA = arreglo.length;
+                        while (longA > 0) {
+
+                              for(var i = 0; i <= arreglo.length; i++) {
+                              
+                                                                 
+                                    if (arreglo[i] > arreglo[i + 1] ) {
+                                          temporal = arreglo[i];
+                                          arreglo[i] = arreglo[i + 1];
+                                          arreglo[i + 1] = temporal;                                       
+                                    }
+                                                                                                
+                              }  
+                                                                              
+                          
+                              longA--; 
+
+                              iteracion++;
+
+                              
+                              console.log("Iteracion: " + iteracion);
+                              
+                              
+                              console.log(JSON.stringify(arreglo));     
+                        }
+
+                        console.log("Arrego Ordenado de Forma Ascendente")
+                        console.log(JSON.stringify(arreglo));
+                                              
+
+                        }
+                  OrdenaArreglos([16, 114, 200, 15, -8, 0, -115, -250]);   
+                                             
+                                
+                  
+    
+
+</script> 

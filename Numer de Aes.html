@@ -1,0 +1,105 @@
+<script>
+                            
+            /* XX Cuenta cuantas veces esta una  letras en la palabra XX   */
+  /* XX y determina si tambien esta en minusculas y cuantas veces se repite XX   */  
+                             
+
+    
+    arreglo = [];     
+    letra = " ";  
+    palabra = " ";         
+
+    function CuentaAes(palabra, letra) {
+        
+        var string = palabra;
+        var arreglo = [...string];
+   
+        minusculas = [];
+        mayusculas = []; 
+        total = 0;  
+   
+        letraMayuscula = " ";
+        letraMinuscula = " ";
+        switchMayuscula = 0;
+        switchMinuscula = 0;  
+        totalMayuscula = 0;
+        totalMinuscula = 0;
+              
+
+        minusculas = ["a", "b", "C", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        mayusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+                        
+
+            for (k = 0; k <= arreglo.length; k++){
+                if (letra == arreglo[k]){
+                  total++;
+
+ 
+                  /*         Determina Minuscula   */
+
+                    for(i = 0; i <= minusculas.length; i++) {
+                        if (letra == minusculas[i] ) {
+                            letraMayuscula = mayusculas[i];
+                            switchMinuscula = 1; 
+                    
+                            letraMayuscula = mayusculas[i];
+                       
+                        }                    
+                    } 
+                 /*        Determina Mayuscula    */  
+
+                        for(j = 0; j <= mayusculas.length; j++) {
+                        if (letra == mayusculas[j] ) {
+                            LetraMinuscula = minusculas[j];
+                            switchMayuscula = 1;  
+                                                                
+                            letraMinuscula= minusculas[j]
+                    
+                        }                    
+                    } 
+            
+                }
+
+            }
+
+            if (switchMayuscula == 1) {
+
+               
+                    for (k = 0; k <= arreglo.length; k++){
+                        if (letraMinuscula == arreglo[k]){
+                        totalMinuscula++;
+                    }
+                    }
+            }
+
+            if (switchMinuscula == 1) {
+                                
+
+                    for (k = 0; k <= arreglo.length; k++){
+                        if (letraMayuscula == arreglo[k]){
+                        totalMayuscula++;
+                    }
+                    }
+            } 
+             
+            console.log("Palabra : " + palabra); 
+            console.log("Letra requerida: " + letra); 
+              
+            console.log("La letra: " + letra + " esta " + total +  " veces en " + palabra);
+           
+            if (switchMinuscula == 1) {                   
+            console.log("la letra " + letraMayuscula + " tambien esta en Mayuscula " + " " + totalMayuscula + " veces " + palabra);    
+            }
+
+            if (switchMayuscula == 1) {                   
+            console.log("la letra " + letraMinuscula + " tambien esta en Minuscula " + " " + totalMinuscula + " veces " + palabra);    
+            } 
+
+    }   
+        
+    CuentaAes("Gregorio Rincones", "i");                             
+                                                           
+              
+    
+</script> 
