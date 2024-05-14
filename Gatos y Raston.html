@@ -1,0 +1,37 @@
+<script>
+                            
+                 /* calcula que gato alcanza  al  raton xxx x  */ 
+                 console.log("Gatos y Raton")
+                 
+                function gatosYRaton(gato1, gato2, raton) {
+                
+                distancia1 = gato1 - raton;
+                distancia2 = gato2 - raton;
+                              
+                 if (distancia1 < 0 ) {
+                      distancia1 *= -1;
+                }
+
+                if (distancia2 < 0 ) {
+                      distancia2 *= -1;
+                }  
+               
+                console.log("El Gato 1 esta en la posicion: " + gato1 + " El Gato 2 esta en la posicion: " + gato2 + " y el raton en la posicion: " + raton)
+                
+                if (distancia1 < distancia2) {
+                      return "***   Gato 1 alcanzo al raton  ***"
+                    } else if( distancia1 > distancia2) {
+                      return "***  Gato2 alcanzo al raton  ***"
+                } 
+                return "***  El raton escapo  ***";
+                 
+              }  
+                  console.log(gatosYRaton(3, 99, 80));     
+                  
+                  console.log("El gato 1 estaba a: " + distancia1 +" pasos , y el gato 2 estaba a: " + distancia2 + " pasos"); 
+
+          
+
+</script>             
+            
+                            

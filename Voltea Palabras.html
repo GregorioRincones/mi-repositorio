@@ -1,0 +1,34 @@
+<script>
+
+ /* XXX   voltea la palabra XXX  */  
+
+    function volteaPalabra(palabra){
+        
+    
+        var arreglo = [...palabra];
+
+        longitudPalabra = arreglo.length - 1             
+        mediaLongitud = Math.trunc(longitudPalabra / 2);
+     
+        /* XXX inicio  Siclo de trabajo  XXXX */
+                     
+        for(j = 0; j <= mediaLongitud; j++) {
+
+        varInicio = arreglo[j];
+        varFin = arreglo[longitudPalabra];             
+        arreglo[j] =  varFin;
+        arreglo[longitudPalabra] = varInicio;  
+               
+        longitudPalabra--
+
+        }                
+            /* XXX Fin  Siclo de trabajo  XXXX */
+            
+        console.log(palabra);
+
+        console.log(JSON.stringify(arreglo));
+
+    }
+    volteaPalabra("dava le arroz a la zorra el avad");
+    
+</script>
