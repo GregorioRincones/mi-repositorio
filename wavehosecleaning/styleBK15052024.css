@@ -54,6 +54,15 @@ html{
       transform: scale(1.2);
    }
 
+      .heading{
+      text-align: center;
+      background: var(--verde);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      padding: 1rem;
+   } 
 
    header{   
       position: fixed; 
@@ -104,15 +113,19 @@ html{
    display: flex;
    align-items: center;
    justify-content: center;
-   background: url(../wavehosecleaning/img//limpieza4.jpg) no-repeat;
+   background: url(../wavehosecleaning/img/limpieza4.jpg) no-repeat;
    background-size: cover;
    background-position: center;   
 }
-
+ 
 .inicio .imagen img{
-   width: 40vw;
+   width: 30vw;
    animation: float 3s linear infinite;
 }
+.detalles .caja-contenedor .caja img{
+   width: 18vw;
+} 
+
 @keyframes float{
    0%, 100%{
       transform: translateY(0rem);      
@@ -133,15 +146,48 @@ text-transform: uppercase;
      }
      .inicio .content p{
       font-size: 1.7rem;
-      color: #666666;
+      color: #666;
       padding: 1rem 0;
      }
 
-   .inicio {
+   .detalles {
       /* rafael */
       position: absolute;
-      top: 70px;
+      top: 1065px; 
    }
+
+   .detalles .caja-contenedor{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+
+   .detalles .caja-contenedor .caja{
+      flex: 1 1 30rem;
+      background: white;
+      border-radius: .5rem;
+      border: .1re, solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem rgba(0, 0, 0, .1);
+      margin: 1.5rem;
+      padding: 3rem 2rem;
+      border-radius: .5rem;
+      text-align: center;
+      transition: .2s linear;     
+   }
+   .detalles .caja-contenedor .caja h3{
+      font-size: 2rem;
+      color: #333;
+      padding-top: 1rem; 
+   }
+
+   .detalles .caja-contenedor .caja p{
+      font-size: 1.3rem;
+      color: #666;
+      padding: 1.3rem 0;
+   }
+
 
    @media(max-width:1200px)  {
       html{
