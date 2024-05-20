@@ -61,7 +61,7 @@ html{
       background-clip: text;
       font-size: 3.5rem;
       text-transform: uppercase;
-      padding: 1rem;
+      padding: 7rem;
    } 
 
    header{   
@@ -148,19 +148,12 @@ text-transform: uppercase;
       padding: 1rem 0;
      }
 
-   .detalles {
-      /* rafael */
-      position: absolute;
-      top: 1065px; 
-   }
-
-   .detalles .caja-contenedor{
+      .detalles .caja-contenedor{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
    }
-
 
    .detalles .caja-contenedor .caja{
       flex: 1 1 30rem;
@@ -172,8 +165,7 @@ text-transform: uppercase;
       padding: 3rem 2rem;
       border-radius: .5rem;
       text-align: center;
-      transition: .2s linear;  
-           
+      transition: .2s linear;            
    }
 
    .detalles .caja-contenedor .caja img{
@@ -193,16 +185,67 @@ text-transform: uppercase;
       padding: 1.5rem 0;
    }
 
+      
    .acerca_de .columna img{
       width: 35vw;
-      height: 30rem;  
+      height: 40rem;  
+   }
+   
+   .acerca_de{
+      background: url(../wavehosecleaning/img/limpieza4.jpg) no-repeat;
+      background-size: cover; 
+      background-position: center;
+      padding: 3rem;
    } 
 
+   .acerca_de .columna{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;      
+   }
+
+.acerca_de .columna .imagen{
+   flex: 1 1 30rem; 
+}
+
+.acerca_de .columna .imagen img{
+   width: 100%; 
+}
+
+.acerca_de .columna .content{
+   flex: 1 1 30rem;
+}
+
+.acerca_de .columna .content h3{
+   font-size: 3rem;
+   color: #333;
+}
+
+
+.acerca_de .columna .content p{
+   font-size: 1.5rem;
+   color: #666;
+   padding: 1rem;
+   }
+
+   .acerca_de .columna .content .bottons a:last-child{
+      margin-left: 2rem;
+   }
 
    @media(max-width:1200px)  {
       html{
          font-size: 55%;
       }      
+   }
+
+
+   @media(max-width:99px){
+      setion{
+         padding: 0 3%;
+         padding-top: 7.5rem;
+         padding-bottom: 2rem;
+      }
    }
 
    @media(max-width:768px){
@@ -252,10 +295,22 @@ text-transform: uppercase;
          font-size: 1.5rem;
       }
 
+      .acerca_de{
+         background-position: right;
+      }
+
    }
-@media(max-width:450px){
+   @media(max-width:450px){
    html{
       font-size: 49%;
    }
+   .acerca_de .columna .content .bottons a{
+      width: 100%;
+      text-align: center;
+      }
+   .acerca_de .columna .content .bottons a:last-child{
+      margin: 1rem 0;
+
+   }   
 }
   
