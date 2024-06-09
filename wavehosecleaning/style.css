@@ -340,7 +340,9 @@ text-transform: uppercase;
          font-size: 1.5rem;
          padding: 1rem; 
       }
-
+      .precios h3{
+         font-size: 2rem;
+      }
       .precios .caja-contenedor{
          display: flex;
          align-items: center;
