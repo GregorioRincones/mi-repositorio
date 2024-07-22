@@ -110,7 +110,7 @@ html{
       opacity: 0;
    }
  /* controla imagenes */
-.inicio{
+.bienvenido {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -119,7 +119,8 @@ html{
    background-position: center;   
 }
  
-.inicio .imagen img{
+.bienvenido .imagen img{
+   border-radius: 5%;
    width: 30vw;
    animation: float 3s linear infinite;
 }
@@ -134,29 +135,29 @@ html{
    }
 }
 
-.inicio .content h3{
+.bienvenido .content h3{
 font-size: 3.5rem;
 color: var(--verde);
 text-transform: uppercase;
 }
-   .inicio .content h3 span{
+   .bienvenido .content h3 span{
    color: #186a3b;
    text-transform: uppercase;
      }
-   .inicio .content p{
+   .bienvenido .content p{
       font-size: 1.7rem;
       color: #666;
       padding: 1rem 0;
      }
 
-   .servisios .caja-contenedor{
+   .servicios .caja-contenedor{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
    }
 
-   .servisios .caja-contenedor .caja{
+   .servicios .caja-contenedor .caja{
       flex: 1 1 30rem;
       background: white;
       border-radius: .5rem;
@@ -169,25 +170,26 @@ text-transform: uppercase;
       transition: .2s linear;            
    }
 
-   .servisios .caja-contenedor .caja img{
+   .servicios .caja-contenedor .caja img{
       width: 12vw;
       height: 10vw;  
    } 
   
-   .servisios .caja-contenedor .caja h3{
+   .servicios .caja-contenedor .caja h3{
       font-size: 2rem;
       color: #333;
       padding-top: .3rem; 
    }
 
-   .servisios .caja-contenedor .caja p{
+   .servicios .caja-contenedor .caja p{
       font-size: 1.3rem;
       color: #666;
       padding: 1.5rem 0;
-   }
+   }  
 
       
    .quienes_somos .columna img{
+      border-radius: 5%;
       width: 35vw;
       height: 40rem;  
    }
@@ -287,6 +289,11 @@ text-transform: uppercase;
 
    .suscribete form input[type="submit"]:hover{
       color: var(--limon);
+   }
+
+   .suscribete label{
+      color: green;
+      font-size: 1.8rem;
    }
 
    .testimonios .caja-contenedor{
